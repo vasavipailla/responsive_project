@@ -69,7 +69,7 @@ li :hover {
     margin: 30px;
 }
 
- @media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .heading {
         font-size: 90px;
     }
@@ -91,6 +91,51 @@ li :hover {
     .heading {
         font-size:36px;
     }
+    .main-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
+
+@media screen and (max-width: 1440px) {
+    .main-text{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-text {
+        font-size: 22px;
+    }
+} 
+
+@media screen and (max-width:320px) {
+    .main-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .image{
+        
+    }
+}
+
+@media screen and (max-width:768px) {
+    .image {
+        
+    }
+} 
+
+@media screen and (max-width:320px) {
+    .image {
+        
+    }
+}
+
+
+
+
 
 
