@@ -116,26 +116,26 @@ li :hover {
     }
 }
 
-@media screen and (max-width: 1440px) {
+ @media screen and (max-width: 1440px) {
     .image{
-        
+        background-image: url('../images/Bitmap.png');
     }
 }
 
 @media screen and (max-width:768px) {
     .image {
-        
+        background-image: url('../images/Bitmap1.png');
     }
 } 
 
 @media screen and (max-width:320px) {
     .image {
-        
+        background-image: url('../images/Bitmap2.png');
     }
 }
 
 
-
+ 
 
 
 
