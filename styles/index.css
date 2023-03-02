@@ -1,8 +1,8 @@
 body {
     width: 100%; 
     max-width: 1440px;
-    min-height: 810px; 
-    margin: 40px;
+    min-height: 810px;  
+    margin:30px; 
     
 }
 
@@ -34,6 +34,8 @@ body {
 
 }
 
+
+
 li {
     margin: 20px;
 }
@@ -42,12 +44,12 @@ li {
     color: green;
 }
 
+
 .main {
-    width:100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin:30px;
+    align-items: center; 
+    margin:50px;
 }
 
 .heading{
@@ -71,24 +73,24 @@ li {
     text-align: center;
     color: #242635;
     width: 100%;
-    max-width: 573px;
+    max-width: 573px; 
 }
 
-.image {
+ .image {
+    margin:50px;
+    /* padding: 30px;  */
     width:100%;
-    max-width: 864px;
-    min-height: 486px;
-    margin: 30px;
-    
-}
+    max-width: 864px;  
+}  
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width:1400px) {
     .heading {
         font-size: 90px;
     }
     .main-text{
         font-size: 22px;
     }
+    
 }
 
 @media screen and (max-width:768px) {
@@ -98,6 +100,7 @@ li {
     .main-text {
         font-size: 22px;
     }
+     
 } 
 
 @media screen and (max-width:400px) {
@@ -108,47 +111,35 @@ li {
         font-size: 12px;
         line-height: 18px;
     }
+    
 }
 
-@media screen and (max-width: 1440px) {
-    .main-text{
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .main-text {
-        font-size: 22px;
-    }
-} 
-
-@media screen and (max-width:400px) {
-    .main-text {
-        font-size: 12px;
-        line-height: 18px;
-    }
-}
-
- @media screen and (max-width: 1440px) {
-    .image{
-        background-image: url('../images/Bitmap.png');
-    }
-}
-
-@media screen and (max-width:768px) {
+ /* @media  screen and (max-width:1000px) {
     .image {
-        background-image: url('../images/Bitmap1.png');
-    }
+        background-image:url('../images/Bitmap1.jpg');
+    }     
 } 
 
-@media screen and (max-width:400px) {
+@media  screen and (max-width:800px) {
     .image {
-        background-image: url('../images/Bitmap2.png');
+        background-image:url('../images/Bitmap2.png');
     }
-} 
+    
+}
+
+ @media screen and (min-width:1001px) {
+    .image {
+        background-image:url('../images/Bitmap.png');
+    }  
+    
+}    */
 
 
  
 
 
+
+
+
+ 
 
