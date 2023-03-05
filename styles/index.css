@@ -6,6 +6,7 @@ body {
     
 }
 
+
 .nav {
     display: flex;
     justify-content: space-evenly;
@@ -49,7 +50,7 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    margin:50px;
+    margin:40px;
 }
 
 .heading{
@@ -77,11 +78,11 @@ li {
 }
 
  .image {
-    margin:50px;
+    margin:50px ;
     /* padding: 30px;  */
     width:100%;
-    max-width: 864px;  
-}  
+    max-width:860px; 
+} 
 
 @media screen and (max-width:1400px) {
     .heading {
@@ -114,7 +115,7 @@ li {
     
 }
 
- /* @media  screen and (max-width:1000px) {
+/* @media  screen and (max-width:1000px) {
     .image {
         background-image:url('../images/Bitmap1.jpg');
     }     
@@ -132,7 +133,7 @@ li {
         background-image:url('../images/Bitmap.png');
     }  
     
-}    */
+}     */
 
 
  

@@ -16,12 +16,11 @@
                  <div>
                      <h1 class="logo">Head.</h1>
                  </div>
-                 <div> 
-                   <ul class="list">
-                     <li><a href="#">Works</a></li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Contacts</a></li>
-                   </ul>
+                 <div class="list" id="nav-bar">
+                     <a href="#">Works</a>
+                     <a href="#">Services</a>
+                     <a href="#">Contacts</a>
+                     <a class="icon" onclick="burgerMenu()"><i class="bars"></i></a>
                  </div>
             </nav>
         </header>
@@ -32,7 +31,7 @@
                     <p class="main-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
                 </div>
                 <div class="image">
-                    <picture>
+                     <picture>
                         <source media="(max-width:400px)" srcset="./images/Bitmap2.png">
                         <source media="(max-width:768px)" srcset="./images/Bitmap1.jpg">
                         <source media="(mix-width:1440px)" srcset="./images/Bitmap.png"> 
@@ -42,5 +41,18 @@
                 </div>
             </div> 
         </main>
+        <script>
+            function burgerMenu() {
+                let burger=document.getElementById("nav-bar");
+                if(burger.className === "list") {
+                    burger.className += " responsive";
+                }
+                else{
+                    burger.className = "list";
+                }
+                
+            }
+
+        </script>
     </body>
 </html>
