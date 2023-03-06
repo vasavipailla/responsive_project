@@ -6,9 +6,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/reset.css"> 
         <link rel="stylesheet" href="styles/index.css">
-        <title>Responsive</title>
+        <title>Responsive-Nav</title>
     </head>
     <body>
         <header>
@@ -16,12 +17,11 @@
                  <div>
                      <h1 class="logo">Head.</h1>
                  </div>
-                 <div> 
-                   <ul class="list">
-                     <li><a href="#">Works</a></li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">Contacts</a></li>
-                   </ul>
+                 <div class="list" id="nav-bar">
+                     <a class="navItem" href="#">Works</a>
+                     <a class="navItem" href="#">Services</a>
+                     <a class="navItem" href="#">Contacts</a>
+                     <a class="icon" onclick="burgerMenu()"> <i class="fa fa-bars"></i></a>
                  </div>
             </nav>
         </header>
@@ -32,15 +32,27 @@
                     <p class="main-text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
                 </div>
                 <div class="image">
-                    <picture>
+                     <picture>
                         <source media="(max-width:400px)" srcset="./images/Bitmap2.png">
                         <source media="(max-width:768px)" srcset="./images/Bitmap1.jpg">
                         <source media="(mix-width:1440px)" srcset="./images/Bitmap.png"> 
                         <img class="pic" src="images/Bitmap.png" alt=""> 
                     </picture>  
-                    <!-- <img src="images/Bitmap2.png" alt="" srcset="images/Bitmap1,jpg 2x,images/Bitmap.png 3x"> -->
                 </div>
             </div> 
         </main>
+        <script>
+            function burgerMenu() {
+                let burger=document.getElementById("nav-bar");
+                if(burger.className === "list") {
+                    burger.className += " responsive";
+                }
+                else{
+                    burger.className = "list";
+                }
+                
+            }
+
+        </script>
     </body>
 </html>
