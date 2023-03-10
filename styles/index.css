@@ -75,9 +75,10 @@ body {
 }
 
  .image {
-    margin:50px ;
-    width:100%;
-    max-width:860px; 
+    max-width:100%;
+    overflow: hidden; 
+    
+   
 } 
 
 @media screen and (max-width:1400px) {
@@ -87,6 +88,9 @@ body {
     .main-text{
         font-size: 22px;
     }
+    .image {
+        margin: 40px;
+    } 
     
 }
 
@@ -96,6 +100,9 @@ body {
     }
     .main-text {
         font-size: 22px;
+    }
+    .image {
+        margin: 40px;
     }
      
 } 
@@ -108,18 +115,22 @@ body {
         font-size: 12px;
         line-height: 18px;
     }
-    
+    .image {
+        margin: 40px;
+    }
 }
 
  /* @media  screen and (max-width:1000px) {
     .image {
         background-image:url('images\Bitmap1.jpg');
+        margin: 40px;
     }     
 } 
 
 @media  screen and (max-width:800px) {
     .image {
         background-image:url('images\Bitmap2.png');
+        margin: 40px;
     }
     
 }
@@ -129,8 +140,8 @@ body {
         background-image:url('images\Bitmap.png');
     }  
     
-}      */
-
+}      
+ */
 
  
 
