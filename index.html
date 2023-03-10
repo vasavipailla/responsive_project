@@ -17,11 +17,12 @@
                  <div>
                      <h1 class="logo">Head.</h1>
                  </div>
-                 <div class="list" id="nav-bar">
-                     <a class="navItem" href="#">Works</a>
-                     <a class="navItem" href="#">Services</a>
-                     <a class="navItem" href="#">Contacts</a>
-                     <a class="icon" onclick="burgerMenu()"> <i class="fa fa-bars"></i></a>
+                 <div>
+                    <ul class="list">
+                     <li><a href="#">Works</a></li>
+                     <li><a href="#">Services</a></li>
+                     <li><a href="#">Contacts</a></li>
+                    </ul>
                  </div>
             </nav>
         </header>
@@ -37,22 +38,9 @@
                         <source media="(max-width:768px)" srcset="./images/Bitmap1.jpg">
                         <source media="(mix-width:1440px)" srcset="./images/Bitmap.png"> 
                         <img class="pic" src="images/Bitmap.png" alt=""> 
-                    </picture>  
+                    </picture>   
                 </div>
             </div> 
         </main>
-        <script>
-            function burgerMenu() {
-                let burger=document.getElementById("nav-bar");
-                if(burger.className === "list") {
-                    burger.className += " responsive";
-                }
-                else{
-                    burger.className = "list";
-                }
-                
-            }
-
-        </script>
     </body>
 </html>
